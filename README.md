@@ -1,24 +1,32 @@
+# 🛡️ Système d’Authentification Utilisateur en PHP
 
-# Projet d'enregistrement et de connexion d'utilisateurs en PHP
+Ce projet est une application simple en **PHP** permettant aux utilisateurs de **s'inscrire**, **se connecter** et **se déconnecter**, avec une base de données **MySQL**. Il utilise **PDO** pour les connexions sécurisées à la base de données et `password_hash()` pour protéger les mots de passe.
 
-Ce projet est une application simple en PHP permettant aux utilisateurs de s'inscrire, se connecter et se déconnecter, avec une base de données MySQL.
+---
 
 ## ✅ Fonctionnalités
 
-- Enregistrement de nouveaux utilisateurs
-- Connexion avec nom d'utilisateur et mot de passe
-- Déconnexion
-- Stockage des utilisateurs dans une base de données MySQL
+- ✅ Enregistrement des utilisateurs
+- ✅ Connexion sécurisée avec vérification de mot de passe
+- ✅ Session utilisateur (connexion / déconnexion)
+- ✅ Redirection après connexion
+- ✅ Sécurité de base (hash des mots de passe, protection contre l'injection SQL)
+
+---
 
 ## 🧰 Prérequis
 
-- Serveur local (XAMPP, WAMP, etc.)
-- PHP 7 ou plus récent
-- MySQL ou MariaDB
+- Serveur local : [XAMPP](https://www.apachefriends.org/index.html), WAMP, Laragon, etc.
+- PHP 7.0 ou version supérieure
+- MySQL / MariaDB
+- Navigateur web
+
+---
 
 ## 🚀 Installation
 
-1. Copier le projet dans le dossier `htdocs` de XAMPP.
-2. Créer une base de données via phpMyAdmin.
-3. Modifier le fichier `db_config.php` avec vos informations MySQL (nom de base, utilisateur, mot de passe).
-4. Accéder au projet via le navigateur :
+1. **Cloner le projet ou le télécharger** :
+
+   ```bash
+   git clone https://github.com/votre-utilisateur/nom-du-projet.git
+
